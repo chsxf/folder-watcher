@@ -1,0 +1,22 @@
+{
+  "name": "chsxf/folder-watcher",
+  "description": "Watches a folder's content and calls to responders when changes are found",
+  "license": "MIT",
+  "homepage": "https://github.com/chsxf/folder-watcher",
+  "authors": [
+    {
+      "name": "Christophe SAUVEUR",
+      "email": "chsxf.pro@gmail.com",
+      "homepage": "https://chsxf.dev",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7"
+  },
+  "autoload": {
+    "psr-4": {
+      "chsxf\\FolderWatcher": "src/"
+    }
+  }
+}
