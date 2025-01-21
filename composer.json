@@ -12,11 +12,11 @@
     }
   ],
   "require": {
-    "php": ">=7"
+    "php": ">=8.1"
   },
   "autoload": {
     "psr-4": {
-      "chsxf\\FolderWatcher": "src/"
+      "chsxf\\FolderWatcher\\": "src/"
     }
   }
 }

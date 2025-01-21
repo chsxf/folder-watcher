@@ -4,5 +4,6 @@ namespace chsxf\FolderWatcher;
 
 interface IWatchResponder
 {
-    function fileChanged(string $filePath, FileChangeType $changeType);
+    function notifyStartWatching(): void;
+    function processChanges(array $watchChanges): void;
 }

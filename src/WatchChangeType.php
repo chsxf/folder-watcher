@@ -2,7 +2,7 @@
 
 namespace chsxf\FolderWatcher;
 
-enum FileChangeType
+enum WatchChangeType
 {
     case added;
     case modified;
