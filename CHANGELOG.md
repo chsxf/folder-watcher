@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2025-02-09
+
+### Changed
+
+- Excluding all files and folders starting with `.`
+
 ## [0.1.0] - 2025-02-01
 
 ### Added

@@ -113,6 +113,6 @@ final class Index
         if ($folderContents === false) {
             return false;
         }
-        return array_filter($folderContents, fn($item) => !preg_match('/^\.{1,2}$/', $item));
+        return array_filter($folderContents, fn($item) => !preg_match('/^\./', $item));
     }
 }
