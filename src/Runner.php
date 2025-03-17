@@ -7,6 +7,7 @@ final class Runner
     private readonly array $rootIndices;
     private int $microsecondsRefreshInterval;
     private array $responders = [];
+    private bool $stopRequested = false;
 
     public function __construct(array $rootPaths, int $msRefreshInterval = 50)
     {
@@ -35,6 +36,8 @@ final class Runner
 
     public function watch(): false
     {
+        $this->stopRequested = false;
+
         foreach ($this->rootIndices as $index) {
             if (!$index->initializeItems()) {
                 return false;
@@ -59,6 +62,10 @@ final class Runner
                 usleep($this->microsecondsRefreshInterval);
             }
 
+            if ($this->stopRequested) {
+                break;
+            }
+
             $changes = [];
             foreach ($this->rootIndices as $index) {
                 $indexChanges = $index->refresh();
@@ -80,5 +87,10 @@ final class Runner
         }
 
         return false;
+    }
+
+    public function stop(): void
+    {
+        $this->stopRequested = true;
     }
 }

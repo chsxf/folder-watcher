@@ -65,6 +65,12 @@ When everything is configured, you can start watching for changes.
 $runner->watch();
 ```
 
+## Stopping
+
+```php
+$runner->stop();
+```
+
 # Support
 
 This package is under active development.

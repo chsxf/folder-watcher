@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2025-03-17
+
+### Added
+
+- `stop` method in the `Runner` class
+
 ## [0.1.1] - 2025-02-09
 
 ### Changed
