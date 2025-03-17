@@ -31,7 +31,6 @@ This package has been designed to be easy to use but flexible.
 ```php
 require_once('vendor/autoload.php');
 
-use chsxf\FolderWatcher\IWatchResponder;
 use chsxf\FolderWatcher\Runner;
 
 // Instantiates the runner and configures the watched folders
